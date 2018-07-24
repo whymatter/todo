@@ -1,0 +1,9 @@
+<div id="container">
+  <h1>Hello Oliver ...</h1>
+  <div id="todoListFilterContainer">
+    <mat-chip-list>
+      <mat-chip *ngFor="let list of todoLists | async">{{list.name}}</mat-chip>
+      <mat-chip (click)="addNewTodoList()">+</mat-chip>
+    </mat-chip-list>
+  </div>
+</div>
